@@ -17,3 +17,85 @@ __pycache__/
 private/
 .private/
 *_private_overlay.*
+
+# Build output
+build/
+build-*/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+.ninja_deps
+.ninja_log
+build.ninja
+rules.ninja
+
+# Qt Creator local files
+*.user
+*.user.*
+*.autosave
+
+# Compiled files
+*.o
+*.obj
+*.a
+*.so
+*.so.*
+*.dll
+*.exe
+
+# Python generated files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Local runtime/state/output
+*.log
+*.pid
+*.tmp
+*.swp
+*~
+exports/
+state/
+runtime/
+cache/
+
+# Environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Never commit SSH material
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+t14_to_pi
+t14_to_pi.*
+
+# Private overlays
+private/
+.private/
+*_private_overlay.*
+*_private.*
+local_private/
+
+# Private/local TG database copies
+tg_registry.db
+tg_registry(5).db
+
+# SQLite temporary files
+*.db-journal
+*.db-shm
+*.db-wal
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

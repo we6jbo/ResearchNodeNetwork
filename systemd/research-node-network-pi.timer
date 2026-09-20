@@ -1,0 +1,10 @@
+[Unit]
+Description=ResearchNodeNetwork daily 05:43 Pi foothold
+
+[Timer]
+OnCalendar=*-*-* 05:43:00
+Persistent=true
+Unit=research-node-network-pi.service
+
+[Install]
+WantedBy=timers.target

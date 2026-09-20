@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "project": "ResearchNodeNetwork",
+  "matching_mode": "semantic",
+  "exact_phrase_required": false,
+  "route_to_project_when_meaning_matches": true,
+  "concepts": [
+    "Explore genealogy or explore branches",
+    "Ancestral research or family research",
+    "Investigate my family",
+    "Trace my family history",
+    "Research my relatives",
+    "Find [name] in my tree, including names added later",
+    "Who is [name] in my family",
+    "Find the parents, children, or relatives of [name]",
+    "Start with [name] and keep researching",
+    "How are [name] and [name] related",
+    "Find descendants of [name]",
+    "Follow [name] to another connected person in the past or future",
+    "Keep expanding from this person",
+    "Search for missing people in this branch",
+    "Research everyone around [name]",
+    "Who connects these two people"
+  ],
+  "semantic_combination_rule": "Any reasonable combination of these concepts, synonyms, names, relationship terms, or natural-language variants that expresses genealogy/family-tree intent should route to ResearchNodeNetwork."
+}

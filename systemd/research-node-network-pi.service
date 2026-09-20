@@ -1,0 +1,6 @@
+[Unit]
+Description=ResearchNodeNetwork daily Pi foothold
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/research-node-network-agent pi-foothold

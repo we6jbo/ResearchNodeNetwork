@@ -1,0 +1,13 @@
+[Unit]
+Description=ResearchNodeNetwork local graph service
+After=default.target
+
+[Service]
+Type=simple
+Environment=RNN_DATA_DIR=%h/.local/state/research-node-network
+ExecStart=%h/.local/bin/ResearchNodeNetwork --service
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+PROJECT_ROOT="${HOME}/Projects/ResearchNodeNetwork"
+
+if ! command -v vibe >/dev/null 2>&1; then
+  echo "STOP: vibe is not on PATH."
+  exit 127
+fi
+
+if [[ ! -d "$PROJECT_ROOT" ]]; then
+  echo "STOP: $PROJECT_ROOT does not exist."
+  exit 2
+fi
+
+cd "$PROJECT_ROOT"
+exec vibe "$@"

@@ -1,0 +1,22 @@
+{
+  "project_id": "research-node-network",
+  "project_root": "/home/we6jbo/Projects/ResearchNodeNetwork",
+  "codes": [
+    "TG918273",
+    "TG856134",
+    "TG673245",
+    "TG749502",
+    "TG286753",
+    "TG270541",
+    "TG307645",
+    "TG472690"
+  ],
+  "fallback_project_identifier": "AKA_TE324543",
+  "reference": "User request dated 2026-09-19; portable TG provenance and registry graph",
+  "embedded_in": [
+    "tg_context_snapshot.json",
+    "data/tg_registry_snapshot.json",
+    "AGENTS.md",
+    "README.md"
+  ]
+}
