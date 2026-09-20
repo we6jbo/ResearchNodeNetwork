@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=ResearchNodeNetwork
+Comment=Practice and learn fractions
+Exec=ResearchNodeNetwork
+Icon=org.oneal.ResearchNodeNetwork
+Terminal=false
+Categories=Education;
