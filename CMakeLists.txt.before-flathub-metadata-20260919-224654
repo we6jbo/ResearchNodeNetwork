@@ -20,11 +20,3 @@ qt_add_executable(ResearchNodeNetwork
 target_link_libraries(ResearchNodeNetwork PRIVATE Qt6::Core Qt6::Widgets)
 
 install(TARGETS ResearchNodeNetwork RUNTIME DESTINATION bin)
-
-# Flathub desktop integration
-install(FILES org.oneal.ResearchNodeNetwork.desktop
-        DESTINATION share/applications)
-install(FILES org.oneal.ResearchNodeNetwork.metainfo.xml
-        DESTINATION share/metainfo)
-install(FILES org.oneal.ResearchNodeNetwork.svg
-        DESTINATION share/icons/hicolor/scalable/apps)
