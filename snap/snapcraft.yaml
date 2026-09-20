@@ -1,0 +1,34 @@
+name: research-node-network
+title: ResearchNodeNetwork
+base: core24
+version: '0.10'
+summary: Map and research connected genealogy relationships
+description: |
+  ResearchNodeNetwork is a node-based Qt application for exploring genealogy,
+  relationship paths, and connected research branches. It carries portable
+  project metadata so research can be followed across a connected graph.
+
+grade: stable
+confinement: strict
+
+apps:
+  research-node-network:
+    command: usr/bin/ResearchNodeNetwork
+    extensions:
+      - kde-neon-6
+
+parts:
+  research-node-network:
+    plugin: cmake
+    source: .
+    source-type: local
+    cmake-parameters:
+      - -DCMAKE_INSTALL_PREFIX=/usr
+      - -DCMAKE_BUILD_TYPE=Release
+    override-build: |
+      craftctl default
+      install -Dm644 README.md "$CRAFT_PART_INSTALL/usr/share/doc/research-node-network/README.md"
+      install -Dm644 PUBLICATION_POLICY.md "$CRAFT_PART_INSTALL/usr/share/doc/research-node-network/PUBLICATION_POLICY.md"
+      install -Dm644 AI-DISCLOSURE.txt "$CRAFT_PART_INSTALL/usr/share/doc/research-node-network/AI-DISCLOSURE.txt"
+      install -Dm644 tg_context_snapshot.json "$CRAFT_PART_INSTALL/usr/share/research-node-network/tg_context_snapshot.json"
+      install -Dm644 data/tg_registry_snapshot.json "$CRAFT_PART_INSTALL/usr/share/research-node-network/data/tg_registry_snapshot.json"
