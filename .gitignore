@@ -5,3 +5,15 @@ CMakeFiles/
 CMakeCache.txt
 *.o
 *.user
+__pycache__/
+
+# Never publish local secrets/private overlays
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+private/
+.private/
+*_private_overlay.*
